@@ -169,9 +169,6 @@ body {
     line-height: 28px;
 }
 
-.sneaker_text_p_margin {
-    margin: 28px;
-}
 
 .sneaker_parameters {
     display: flex;
@@ -376,16 +373,9 @@ h2 {
     margin: 0;
 }
 
-/* img {
-    width: 364px;
-    height: 254px;
-    align-self: stretch;
-} */
-
 @media (max-width:780px) {
     body {
         width: 375px;
-        /* height: 4297px; */
         align-self: stretch;
     }
 
@@ -452,10 +442,6 @@ h2 {
         align-self: stretch;
         font-size: 16px;
         line-height: 24px;
-    }
-
-    .sneaker_text_p_margin {
-        margin: 24px;
     }
 
     .sneaker_parameters {
