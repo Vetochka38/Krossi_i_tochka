@@ -121,7 +121,8 @@ body {
     height: 600px;
     align-self: stretch;
     border-radius: 50px 50px 0px 0px;
-    background: url(<path-to-image>), lightgray 0px -192px / 100% 174% no-repeat;
+    /* background: url(<path-to-image>), lightgray 0px -192px / 100% 174% no-repeat; */
+    object-fit: contain;
 }
 
 .main_sneaker_info {
@@ -453,7 +454,7 @@ h2 {
     }
 
     .sneaker_parameters_txt_info {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 24px;
     }
 

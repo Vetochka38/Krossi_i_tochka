@@ -16,7 +16,7 @@ body {
   align-items: center;
   margin: 0;
   width: 1440px;
-  height: 1675px;
+  /* height: 1675px; */
 }
 
 .header {
@@ -42,6 +42,7 @@ body {
 .header_content {
   display: flex;
   padding: 24px 0px;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -91,15 +92,18 @@ body {
   justify-content: center;
   align-items: center;
   align-self: stretch;
+  box-sizing: border-box;
 }
 
 .main_content {
   display: flex;
   padding: 32px 0px;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
+  width: 100%;
 }
 
 .main_txt {
@@ -115,6 +119,8 @@ body {
 }
 .sneaker_a:hover{
   transform: translate(0, -10px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 .content_sneakers {
   display: flex;
@@ -136,11 +142,11 @@ body {
 }
 
 .sneaker__image {
-  width: 364px;
-  height: 254px;
+  width: 100%;
   align-self: stretch;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+  object-fit: contain;
 }
 
 .sneaker_text {
@@ -151,6 +157,7 @@ body {
   align-self: stretch;
   gap: 12px;
   padding: 32px 24px;
+  box-sizing: border-box;
   border-radius: 0px 0px 12px 12px;
   background: var(--white, #FFF);
 }
@@ -304,25 +311,21 @@ h1 {
   line-height: normal;
 }
 
-img {
-  width: 364px;
-  height: 254px;
-  align-self: stretch;
-}
 
 @media (max-width:780px) {
   body {
     width: 375px;
     height: 4297px;
     align-items: flex-start;
+    flex-shrink: 0;
   }
 
   .header {
-    width: 100%;
+    width: 375px;
   }
 
   ._base_header {
-    width: 100%;
+    width: 375px;
     padding: 0px 16px;
     box-sizing: border-box
   }
@@ -332,11 +335,6 @@ img {
     gap: 24px;
   }
 
-  .header_logo-content {
-    width: 215px;
-    height: 64px;
-  }
-
   .main {
     padding: 0px 16px;
   }
@@ -344,7 +342,11 @@ img {
   .main_txt {
     font-size: 32px;
   }
-
+  .sneaker{
+    width: 100%;
+  }
+  .sneaker__image {
+    height: 254px;}
   .footer {
     width: 100%;
   }
